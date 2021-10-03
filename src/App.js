@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import People from "./components/People";
 import Planets from "./components/Planets";
 import React, { useState } from "react";
-import { ReactQueryDevtools } from "react-query-devtools";
+// import { ReactQueryDevtools } from "react-query-devtools";
 
 function App() {
   const [page, setPage] = useState("planets");
@@ -17,7 +17,7 @@ function App() {
           {page === "planets" ? <Planets /> : <People />}
         </div>
       </div>
-      <ReactQueryDevtools initialIsOpen={false} />
+      {/* <ReactQueryDevtools initialIsOpen={false} /> */}
     </>
   );
 }
